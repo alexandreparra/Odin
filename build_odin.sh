@@ -50,7 +50,7 @@ config_darwin() {
 }
 
 config_freebsd() {
-	: ${LLVM_CONFIG=/usr/local/bin/llvm-config11}
+	: ${LLVM_CONFIG=/usr/local/bin/llvm-config14}
 
 	CXXFLAGS="$CXXFLAGS $($LLVM_CONFIG --cxxflags --ldflags)"
 	LDFLAGS="$LDFLAGS $($LLVM_CONFIG --libs core native --system-libs)"
